@@ -1,0 +1,18 @@
+/*start Global Rules*/
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+
+    font-family: "Cairo", sans-serif;
+    max-width: 1466px;
+    margin: 0px auto ;
+    width: 100%;
+
+}
+
+/*end Global Rules*/
