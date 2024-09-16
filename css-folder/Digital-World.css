@@ -9,10 +9,42 @@ html{
 body{
 
     font-family: "Cairo", sans-serif;
-    max-width: 1466px;
+    max-width: 1366px;
     margin: 0px auto ;
     width: 100%;
+    font-size: 20px;
+}
+
+:root{
+
+    --mianColor: blue;
+
+}
+
+@keyframes change-color {
+
+0% {
+    color: none;
+ }
+
+5% {
+    color: var(--mianColor);
+ }
+
+100% {
+    color: none;
+ }
 
 }
 
 /*end Global Rules*/
+
+/*Strat Home Page*/
+
+/*Start Header*/
+
+
+
+/*End Header*/
+
+/*End Home Page*/
