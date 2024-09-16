@@ -21,6 +21,10 @@ body{
 
 }
 
+/*end Global Rules*/
+
+/*start components*/
+
 @keyframes change-color {
 
 0% {
@@ -37,13 +41,11 @@ body{
 
 }
 
-/*end Global Rules*/
+/*start components*/
 
 /*Strat Home Page*/
 
 /*Start Header*/
-
-
 
 /*End Header*/
 
