@@ -17,7 +17,13 @@ body{
 
 :root{
 
-    --mianColor: blue;
+    --mianColor: purple;
+    --marginOfBigScreen: 50px;
+    --marginOfMiddleScreen: 30px;
+    --marginOfSmallScreen: 10px;
+    --fontOfBigScreen: 23px;
+    --fontOfMiddleScreen: 18px;
+    --fontOfSmallScreen: 14px;
 
 }
 
@@ -28,10 +34,6 @@ body{
 @keyframes change-color {
 
 0% {
-    color: none;
- }
-
-5% {
     color: var(--mianColor);
  }
 
@@ -46,6 +48,29 @@ body{
 /*Strat Home Page*/
 
 /*Start Header*/
+
+header {
+
+    margin: 0px var(--marginOfBigScreen) var(--marginOfBigScreen);
+
+}
+
+@media(max-width: 950px){
+header {
+
+    margin: 0px var(--marginOfMiddleScreen) var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width: 550px){
+header {
+
+    margin: 0px var(--marginOfSmallScreen) var(--marginOfSmallScreen);
+
+}
+}
+
 
 /*End Header*/
 
