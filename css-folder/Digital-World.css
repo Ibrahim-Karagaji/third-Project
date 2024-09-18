@@ -12,12 +12,13 @@ body{
     max-width: 1366px;
     margin: 0px auto ;
     width: 100%;
-    font-size: 20px;
 }
 
 :root{
 
     --mianColor: purple;
+    --section-background: #ececec;
+    --paragraphColor: #777;
     --marginOfBigScreen: 50px;
     --marginOfMiddleScreen: 30px;
     --marginOfSmallScreen: 10px;
@@ -43,32 +44,50 @@ body{
 
 }
 
+@keyframes remove-image {
+
+0% {
+    transform: translate(0px,30px);
+ }
+
+50% {
+    transform: translate(0px,-30px);
+ }
+
+100%{
+
+    transform: translate(0px,30px);
+}
+
+}
+
 /*start components*/
 
 /*Strat Home Page*/
+
+.HomePage{
+
+    background-color: var(--section-background);
+    height: 95vh;
+    border-bottom-right-radius: 100%;
+
+}
+
+@media(max-width: 950px){
+.HomePage{
+
+    border-bottom-right-radius: 50%;
+
+}
+}
 
 /*Start Header*/
 
 header {
 
-    margin: 0px var(--marginOfBigScreen) var(--marginOfBigScreen);
+    background-color: white;
+    box-shadow: 0px -20px 15px 15px black;
 
-}
-
-@media(max-width: 950px) {
-header {
-
-    margin: 0px var(--marginOfMiddleScreen) var(--marginOfMiddleScreen);
-
-}
-}
-
-@media(max-width: 550px) {
-header {
-
-    margin: 0px var(--marginOfSmallScreen) var(--marginOfSmallScreen);
-
-}
 }
 
 header .container {
@@ -77,6 +96,7 @@ header .container {
     align-items: center;
     justify-content: space-between;
     font-size: var(--fontOfBigScreen);
+    margin: 0px var(--marginOfBigScreen) var(--marginOfBigScreen);
 
 }
 
@@ -85,6 +105,8 @@ header .container {
 
     flex-direction: column;
     font-size: var(--fontOfMiddleScreen);
+    margin: 0px var(--marginOfBigScreen) var(--marginOfMiddleScreen);
+    padding-bottom: 10px;
 
 }
 }
@@ -93,10 +115,11 @@ header .container {
 header .container {
 
     font-size: var(--fontOfSmallScreen);
+    margin: 0px var(--marginOfBigScreen) var(--marginOfSmallScreen);
 }
 }
 
-header .nameOfWebSite h3 {
+header .nameOfWebSite {
 
     color: var(--mianColor);
 
@@ -120,7 +143,7 @@ header .TitlesOfWebSite a {
 
 header .TitlesOfWebSite a:hover {
 
-    background-color: #ddd;
+    background-color: var(--section-background);
     animation-name: change-color;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -185,5 +208,100 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Header*/
+
+/*Start landing*/
+
+.landing{
+
+    margin:var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px) {
+.landing{
+
+    margin: var(--marginOfMiddleScreen);
+}
+}
+
+@media(max-width:550px) {
+.landing{
+
+    margin:var(--marginOfSmallScreen);
+
+}
+}
+
+.landing .container {
+
+    display: flex;
+    align-items: center;
+
+}
+
+@media(max-width:950px){
+.landing .container {
+
+    text-align: center;
+    height: 400px;
+
+}
+}
+
+.landing .hero {
+
+    font-size: var(--fontOfBigScreen);
+    line-height: 1.8;
+
+}
+
+@media(max-width:950px) {
+.landing .hero {
+
+    font-size: var(--fontOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px) {
+.landing .hero{
+
+    font-size: var(--fontOfSmallScreen);
+
+}
+}
+
+.landing h1{
+
+    color: var(--mianColor);
+    display: inline;
+
+}
+
+.landing p{
+
+    color: var(--paragraphColor);
+    
+}
+
+.landing  img {
+
+    width: 50%;
+    animation-name: remove-image;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@media(max-width:950px) {
+.landing  img {
+
+    display: none;
+
+}
+}
+
+/*End landing*/
 
 /*End Home Page*/
