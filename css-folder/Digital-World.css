@@ -21,8 +21,8 @@ body{
     --marginOfBigScreen: 50px;
     --marginOfMiddleScreen: 30px;
     --marginOfSmallScreen: 10px;
-    --fontOfBigScreen: 23px;
-    --fontOfMiddleScreen: 18px;
+    --fontOfBigScreen: 20px;
+    --fontOfMiddleScreen: 17px;
     --fontOfSmallScreen: 14px;
 
 }
@@ -55,7 +55,7 @@ header {
 
 }
 
-@media(max-width: 950px){
+@media(max-width: 950px) {
 header {
 
     margin: 0px var(--marginOfMiddleScreen) var(--marginOfMiddleScreen);
@@ -63,7 +63,7 @@ header {
 }
 }
 
-@media(max-width: 550px){
+@media(max-width: 550px) {
 header {
 
     margin: 0px var(--marginOfSmallScreen) var(--marginOfSmallScreen);
@@ -84,7 +84,7 @@ header .container {
 header .container {
 
     flex-direction: column;
-    font-size: var(--marginOfmiddleScreen);
+    font-size: var(--fontOfMiddleScreen);
 
 }
 }
@@ -92,7 +92,7 @@ header .container {
 @media(max-width: 550px) {
 header .container {
 
-    font-size: var(--marginOfSmallScreen);
+    font-size: var(--fontOfSmallScreen);
 }
 }
 
