@@ -19,12 +19,16 @@ body{
     --mianColor: purple;
     --section-background: #ececec;
     --paragraphColor: #777;
+    --marginOfBetweenSubjects: 150px;
     --marginOfBigScreen: 50px;
     --marginOfMiddleScreen: 30px;
     --marginOfSmallScreen: 10px;
     --fontOfBigScreen: 20px;
     --fontOfMiddleScreen: 17px;
     --fontOfSmallScreen: 14px;
+    --fontIconOfBigScreen: 30px;
+    --fontIconOfMddleScreen: 30px;
+    --fontIconOfSmallScreen: 30px;
 
 }
 
@@ -78,6 +82,100 @@ body{
 
     transform: translate(0px,-10px);
 }
+}
+
+.mainTitle{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.mainTitle h1 {
+
+    position: relative;
+    padding: 10px 20px;
+    font-size: var(--fontIconOfBigScreen);
+    border: black 3px solid;
+
+}
+
+.mainTitle h1:hover {
+
+    background-color: var(--mianColor);
+    color: white;
+    transition: .4s;
+    border-color: transparent;
+
+}
+
+@media(max-width:950px) {
+.mainTitle h1{
+
+    font-size: var(--fontIconOfMddleScreen);
+
+}
+}
+@media(max-width:550px) {
+.mainTitle h1{
+
+    font-size: var(--fontIconOfSmallScreen);
+
+}
+}
+
+.mainTitle h1::before {
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 15px;
+    background-color: var(--mianColor);
+    left: -30px;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+
+.mainTitle h1:hover::before {
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 15px;
+    background-color: var(--mianColor);
+    left: 5px;
+    border-radius: 50%;
+
+}
+
+.mainTitle h1::after {
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 15px;
+    background-color: var(--mianColor);
+    right: -30px;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+
+.mainTitle h1:hover::after {
+
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 15px;
+    background-color: var(--mianColor);
+    right: 5px;
+    border-radius: 50%;
+
 }
 
 /*start components*/
@@ -333,9 +431,17 @@ header .TitlesOfWebSite a:hover::before {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    font-size: var(--fontOfBigScreen);
-    font-weight: bold;
-
+    font-size: var(--fontIconOfMddleScreen);
 
 }
 /*End Home Page*/
+
+/*Start articles*/
+
+.articles{
+
+    margin: var(--marginOfBetweenSubjects) var(--marginOfBigScreen);
+
+}
+
+/*End articlese*/
