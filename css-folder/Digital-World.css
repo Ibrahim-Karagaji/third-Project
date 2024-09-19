@@ -529,7 +529,7 @@ header .TitlesOfWebSite a:hover::before {
 
     display: flex;
     justify-content: space-between;
-    border-top: var(--paragraphColor) 1px solid;
+    border-top: var(--section-background) 1px solid;
 
 }
 
