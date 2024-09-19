@@ -511,18 +511,18 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-.cardsOfArticles .Articles-Card:hover{
-
-    transform: translate(0px,-10px);
-
-}
-
 @media(max-width:550px){
 .cardsOfArticles .Articles-Card{
 
     font-size: var(--fontOfSmallScreen);
 
 }
+}
+
+.cardsOfArticles .Articles-Card:hover{
+
+    transform: translate(0px,-10px);
+
 }
 
 .text-of-card div{
