@@ -237,7 +237,7 @@ header .container {
 
     flex-direction: column;
     font-size: var(--fontOfMiddleScreen);
-    margin: 0px var(--marginOfBigScreen) var(--marginOfMiddleScreen);
+    margin: 0px var(--marginOfMiddleScreen) var(--marginOfMiddleScreen);
     padding-bottom: 10px;
 
 }
@@ -247,7 +247,7 @@ header .container {
 header .container {
 
     font-size: var(--fontOfSmallScreen);
-    margin: 0px var(--marginOfBigScreen) var(--marginOfSmallScreen);
+    margin: 0px var(--marginOfSmallScreen) var(--marginOfSmallScreen);
 }
 }
 
