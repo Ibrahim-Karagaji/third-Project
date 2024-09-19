@@ -84,10 +84,24 @@ body{
 }
 }
 
+@keyframes arrow-of-articles{
+
+    0%{
+        transform: translate(-15px,0px);
+    }
+
+    100%{
+
+        transform: translate(0px,0px);
+    }
+
+}
+
 .mainTitle{
 
     display: flex;
     justify-content: center;
+    margin-bottom: var(--marginOfBigScreen);
 
 }
 
@@ -441,6 +455,128 @@ header .TitlesOfWebSite a:hover::before {
 .articles{
 
     margin: var(--marginOfBetweenSubjects) var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.articles{
+
+    margin: 0px var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.articles{
+
+    margin: 0px var(--marginOfSmallScreen);
+
+}
+}
+
+.articles .cardsOfArticles{
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+@media(max-width:950px){
+.articles .cardsOfArticles{
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+}
+
+@media(max-width:550px){
+.articles .cardsOfArticles{
+
+    display: grid;
+    grid-template-columns: auto;
+
+}
+}
+
+.cardsOfArticles .Articles-Card{
+
+    display: grid;
+    gap: 10px;
+    width: fit-content;
+    box-shadow: 0px 0px 10px -5px black;
+    font-size: var(--fontOfMiddleScreen);
+    transition: .5s;
+
+}
+
+.cardsOfArticles .Articles-Card:hover{
+
+    transform: translate(0px,-10px);
+
+}
+
+@media(max-width:550px){
+.cardsOfArticles .Articles-Card{
+
+    font-size: var(--fontOfSmallScreen);
+
+}
+}
+
+.text-of-card div{
+
+    display: flex;
+    justify-content: space-between;
+    border-top: var(--paragraphColor) 1px solid;
+
+}
+
+.Articles-Card img{
+
+   width: 100%;
+
+}
+
+.text-of-card h3{
+
+    color: var(--mianColor);
+    padding: 0px 10px;
+
+}
+
+.text-of-card p{
+
+    padding: 0px 10px;
+    color: var(--paragraphColor);
+    line-height: 1.5;
+
+}
+
+.text-of-card a{
+
+    padding: 15px 10px;
+    color: var(--mianColor);
+    font-weight: bold;
+
+}
+
+.text-of-card i{
+
+    display: flex;
+    align-items: center;
+    color: var(--mianColor);
+    transform: translate(-15px,0px);
+
+}
+
+.Articles-Card:hover .text-of-card i{
+
+    animation-name: arrow-of-articles;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
 
 }
 
