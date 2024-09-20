@@ -461,7 +461,7 @@ header .TitlesOfWebSite a:hover::before {
 @media(max-width:950px){
 .articles{
 
-    margin: 0px var(--marginOfMiddleScreen);
+    margin: var(--marginOfBetweenSubjects) var(--marginOfMiddleScreen);
 
 }
 }
@@ -477,7 +477,7 @@ header .TitlesOfWebSite a:hover::before {
 .articles .cardsOfArticles{
 
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: auto auto auto auto;
 
 }
@@ -581,3 +581,93 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End articlese*/
+
+/*start gallery*/
+
+.gallery{
+
+    background-color: var(--section-background);
+
+}
+
+
+.gallery .container{
+
+    margin: 0px var(--marginOfBigScreen);
+
+}
+
+@media(max-width: 950px){
+.gallery .container{
+
+    margin: 0px var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width: 500px){
+.gallery .container{
+
+    margin: 0px var(--marginOfSmallScreen);
+
+}
+}
+
+.gallery .gallery-images{
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+    
+}
+
+@media(max-width: 950px){
+.gallery .gallery-images{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+}
+
+@media(max-width: 550px){
+.gallery .gallery-images{
+
+    display: grid;
+    grid-template-columns: auto;
+
+}
+}
+
+.gallery-images div{
+
+    overflow: hidden;
+    box-shadow: 0px 0px 10px -5px black;
+
+}
+
+.gallery img{
+
+    width: 100%;
+    transition: 0.5s;  
+    position: relative;
+
+}
+
+.gallery img:hover{
+
+    transform: scale(1.1) rotate(3deg);
+
+}
+
+.gallery img::after{
+
+    content: "hello";
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+
+}
+
+/*End gallery*/
