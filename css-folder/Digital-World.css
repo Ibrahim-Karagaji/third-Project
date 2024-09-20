@@ -126,14 +126,14 @@ body{
 @media(max-width:950px) {
 .mainTitle h1{
 
-    font-size: var(--fontIconOfMddleScreen);
+    font-size: var(--fontOfMiddleScreen);
 
 }
 }
 @media(max-width:550px) {
 .mainTitle h1{
 
-    font-size: var(--fontIconOfSmallScreen);
+    font-size: var(--fontOfSmallScreen);
 
 }
 }
@@ -152,6 +152,16 @@ body{
 
 }
 
+@media(max-width:950px){
+.mainTitle h1::before {
+
+    height: 10px;
+    width: 10px;
+    left: -20px;
+
+}
+}
+
 .mainTitle h1:hover::before {
 
     content: "";
@@ -163,6 +173,15 @@ body{
     left: 5px;
     border-radius: 50%;
 
+}
+
+@media(max-width:950px){
+.mainTitle h1:hover::before {
+
+    height: 10px;
+    width: 10px;
+
+}
 }
 
 .mainTitle h1::after {
@@ -179,6 +198,16 @@ body{
 
 }
 
+@media(max-width:950px){
+.mainTitle h1::after {
+
+    height: 10px;
+    width: 10px;
+    right: -20px;
+
+}
+}
+
 .mainTitle h1:hover::after {
 
     content: "";
@@ -190,6 +219,15 @@ body{
     right: 5px;
     border-radius: 50%;
 
+}
+
+@media(max-width:950px){
+.mainTitle h1:hover::after {
+
+    height: 10px;
+    width: 10px;
+
+}
 }
 
 /*start components*/
@@ -613,61 +651,5 @@ header .TitlesOfWebSite a:hover::before {
 }
 }
 
-.gallery .gallery-images{
-
-    display: grid;
-    gap: 30px;
-    grid-template-columns: auto auto auto;
-    
-}
-
-@media(max-width: 950px){
-.gallery .gallery-images{
-
-    display: grid;
-    grid-template-columns: auto auto;
-    
-}
-}
-
-@media(max-width: 550px){
-.gallery .gallery-images{
-
-    display: grid;
-    grid-template-columns: auto;
-
-}
-}
-
-.gallery-images div{
-
-    overflow: hidden;
-    box-shadow: 0px 0px 10px -5px black;
-
-}
-
-.gallery img{
-
-    width: 100%;
-    transition: 0.5s;  
-    position: relative;
-
-}
-
-.gallery img:hover{
-
-    transform: scale(1.1) rotate(3deg);
-
-}
-
-.gallery img::after{
-
-    content: "hello";
-    position: absolute;
-    background-color: red;
-    width: 50px;
-    height: 50px;
-
-}
 
 /*End gallery*/
