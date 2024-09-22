@@ -980,5 +980,36 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-
 /*End Features*/
+
+/*Strat Testimonials*/
+
+.Testimonials{
+
+    background-color: var(--section-background);
+
+}
+
+.Testimonials .container{
+
+    margin: var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.Testimonials .container{
+
+    margin: var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.Testimonials .container{
+
+    margin: var(--marginOfSmallScreen);
+
+}
+}
+
+/*End Testimonials*/
