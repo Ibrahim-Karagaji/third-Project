@@ -993,6 +993,7 @@ header .TitlesOfWebSite a:hover::before {
 .Testimonials .container{
 
     margin: var(--marginOfBigScreen);
+    font-size: var(--fontOfMiddleScreen);
 
 }
 
@@ -1008,8 +1009,80 @@ header .TitlesOfWebSite a:hover::before {
 .Testimonials .container{
 
     margin: var(--marginOfSmallScreen);
+    font-size: var(--fontOfSmallScreen);
 
 }
+}
+
+.Testimonials .Cards-Of-Testimonials{
+
+    display: grid;
+    gap:30px;
+    grid-template-columns: auto auto auto;
+
+}
+
+@media(max-width:950px){
+.Testimonials .Cards-Of-Testimonials{
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+}
+
+@media(max-width:550px){
+.Testimonials .Cards-Of-Testimonials{
+
+    display: grid;
+    grid-template-columns: auto;
+
+}
+}
+
+.Cards-Of-Testimonials .card{
+
+    position: relative;
+    background-color: white;
+    padding: 0px 15px;
+
+}
+
+.Cards-Of-Testimonials .card img{
+
+    position: absolute;
+    right: 10px;
+    border: solid 5px #ebebeb;
+    top: -50px;
+    width: 70px;
+    border-radius: 60%;
+
+}
+
+@media(max-width:550px){
+.Cards-Of-Testimonials .card img{
+
+    width: 40px;
+
+}
+}
+
+.Cards-Of-Testimonials .card h3{
+
+    color: var(--mianColor);
+
+}
+
+.Cards-Of-Testimonials .card i{
+
+    color: gold;
+
+}
+
+.Cards-Of-Testimonials .card p{
+
+    color: var(--paragraphColor);
+
 }
 
 /*End Testimonials*/
