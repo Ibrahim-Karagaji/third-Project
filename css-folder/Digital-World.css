@@ -1167,12 +1167,6 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-.images-of-team-mebers img:hover body{
-
-    background-color: rgba(0, 0, 0, 0.39);
-
-}
-
 .images-of-team-mebers i{
 
     right: 50px;
@@ -1236,3 +1230,13 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Team-Members*/
+
+/*Start Services*/
+
+.Services{
+
+    background-color: var(--section-background);
+
+}
+
+/*End Services*/
