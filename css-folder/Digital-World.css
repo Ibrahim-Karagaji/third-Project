@@ -1016,6 +1016,7 @@ header .TitlesOfWebSite a:hover::before {
 
 .Testimonials .Cards-Of-Testimonials{
 
+    padding: var(--marginOfBigScreen) 0px;
     display: grid;
     gap:30px;
     grid-template-columns: auto auto auto;
@@ -1031,7 +1032,7 @@ header .TitlesOfWebSite a:hover::before {
 }
 }
 
-@media(max-width:550px){
+@media(max-width:750px){
 .Testimonials .Cards-Of-Testimonials{
 
     display: grid;
@@ -1057,14 +1058,6 @@ header .TitlesOfWebSite a:hover::before {
     width: 70px;
     border-radius: 60%;
 
-}
-
-@media(max-width:550px){
-.Cards-Of-Testimonials .card img{
-
-    width: 40px;
-
-}
 }
 
 .Cards-Of-Testimonials .card h3{
