@@ -1079,3 +1079,160 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Testimonials*/
+
+/*Strat Team-Members*/
+
+.Team-Members .container{
+
+    margin: var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.Team-Members .container{
+
+    margin: var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.Team-Members .container{
+
+    margin: var(--marginOfSmallScreen);
+
+}
+}
+
+.Team-Members .images-of-team-mebers{
+
+    display: grid;
+    gap: 100px 50px;
+    grid-template-columns: auto auto auto;
+
+}
+
+@media(max-width:1115px){
+.Team-Members .images-of-team-mebers{
+
+    display: grid;
+    justify-content: center;
+    gap: 70px 100px;
+    grid-template-columns: auto auto;
+
+}
+}
+
+@media(max-width:870px){
+.Team-Members .images-of-team-mebers{
+
+    display: grid;
+    grid-template-columns: auto;
+
+}
+}
+
+.images-of-team-mebers div{
+
+    position: relative;
+
+}
+
+.images-of-team-mebers div::before{
+
+    content: "";
+    position: absolute;
+    background-color: var(--section-background);
+    top: -30px;
+    left: 45px;
+    width: 300px;
+    height: 420px;
+    border-radius: 5%;
+    z-index: -1;
+
+}
+
+.images-of-team-mebers img{
+
+    width: 300px;
+    border-radius: 5%;
+    transition: .5s;
+
+}
+
+.images-of-team-mebers img:hover{
+
+    transform: scale(1.1) ;
+    border-radius: 0%;
+
+}
+
+.images-of-team-mebers img:hover body{
+
+    background-color: rgba(0, 0, 0, 0.39);
+
+}
+
+.images-of-team-mebers i{
+
+    right: 50px;
+    color:var(--paragraphColor);
+
+}
+
+@media(max-width:1115px){
+.images-of-team-mebers i{
+
+    right: -30px;
+    color:var(--paragraphColor);
+}
+}
+
+.images-of-team-mebers i:hover{
+
+    color:var(--mianColor);
+
+}
+
+.images-of-team-mebers .facebook{
+
+    position: absolute;
+    top: 90px;
+
+}
+
+.images-of-team-mebers .twitter{
+
+    position: absolute;
+    top: 130px;
+
+}
+
+.images-of-team-mebers .linkedin{
+
+    position: absolute;
+    top: 170px;
+
+}
+
+.images-of-team-mebers .youtube{
+
+    position: absolute;
+    top: 210px;
+
+}
+
+.images-of-team-mebers h2{
+
+    transform: translate(50px,0px);
+    color:var(--mianColor)
+
+}
+
+.images-of-team-mebers p{
+
+    transform: translate(50px,-5px);
+
+}
+
+/*End Team-Members*/
