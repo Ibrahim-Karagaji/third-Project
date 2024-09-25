@@ -1289,7 +1289,7 @@ header .TitlesOfWebSite a:hover::before {
 }
 }
 
-.Services .skill{
+.Services .box{
 
     position: relative;
     background-color: white;
@@ -1298,7 +1298,7 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-.Services .skill::before{
+.Services .box::before{
 
     content: "";
     position: absolute;
@@ -1311,19 +1311,19 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-.Services .skill:hover::before{
+.Services .box:hover::before{
 
     width: 100%;
 
 }
 
-.Services .skill:hover{
+.Services .box:hover{
 
     transform: translate(0px,-10px);
 
 }
 
-.Services .skill i{
+.Services .box i{
 
     margin-top: 20px;
     color: var(--section-background);
@@ -1331,14 +1331,14 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 @media(max-width:550px){
-.Services .skill i{
+.Services .box i{
 
     font-size: var(--fontIconOfBigScreen);
 
 }
 }
 
-.Services .skill h2{
+.Services .box h2{
 
     margin: 20px 0px;
     color: var(--mianColor);
@@ -1347,14 +1347,14 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 @media(max-width:950px){
-.Services .skill h2{
+.Services .box h2{
 
     font-size: var(--fontOfSmallScreen);
 
 }
 }
 
-.skill .info-of-skill{
+.box .info-of-skill{
 
     display: flex;
     width:100%;
@@ -1364,14 +1364,14 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 @media(max-width:950px){
-.skill .info-of-skill{
+.box .info-of-skill{
 
     font-size: var(--fontOfMiddleScreen);
 
 }
 }
 
-.skill .info-of-skill h2{
+.box .info-of-skill h2{
 
     margin: 0px;
     padding: 15px 0px;
@@ -1383,7 +1383,7 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-.skill .info-of-skill div{
+.box .info-of-skill div{
 
     width: 15%;
     background-color: #7777773b;
@@ -1392,7 +1392,7 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-.skill .info-of-skill p{
+.box .info-of-skill p{
 
     color: var(--mianColor);
     text-align: end;
@@ -1403,3 +1403,183 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Services*/
+
+/*Start Our-Skills*/
+
+.Our-Skills .container{
+
+    margin: var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.Our-Skills .container{
+
+    margin: var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.Our-Skills .container{
+
+    margin: var(--marginOfSmallScreen);
+
+}
+}
+
+.Our-Skills .type-of-our-skills{
+
+    display: flex;
+
+}
+
+.type-of-our-skills .skills-type{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+@media(max-width:950px){
+.type-of-our-skills img{
+
+    display:none;
+    
+}
+}
+
+.skills-type .html-skill .rate .html-prog{
+
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: var(--section-background);
+
+}
+
+.skills-type .html-skill .rate .html-prog::before{
+
+    content: "";
+    position: absolute;
+    left: 0px;
+    background-color: var(--mianColor);
+    width: 80%;
+    height: 25px;
+
+}
+
+.skills-type .html-skill .rate .html-prog::after{
+
+    content: "80%";
+    position: absolute;
+    color: var(--mianColor);
+    background-color: var(--section-background);
+    padding: 8px;
+    top: -45px;
+    left: 77%;
+    border-radius: 20%;
+
+}
+
+.skills-type .css-skill .rate .css-prog{
+
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: var(--section-background);
+
+}
+
+.skills-type .css-skill .rate .css-prog::before{
+
+    content: "";
+    position: absolute;
+    left: 0px;
+    background-color: var(--mianColor);
+    width: 85%;
+    height: 25px;
+
+}
+
+.skills-type .css-skill .rate .css-prog::after{
+
+    content: "85%";
+    position: absolute;
+    color: var(--mianColor);
+    background-color: var(--section-background);
+    padding: 8px;
+    top: -45px;
+    left: 81%;
+    border-radius: 20%;
+
+}
+
+.skills-type .JavaScript-skill .rate .JavaScript-prog{
+
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: var(--section-background);
+
+}
+
+.skills-type .JavaScript-skill .rate .JavaScript-prog::before{
+
+    content: "";
+    position: absolute;
+    left: 0px;
+    background-color: var(--mianColor);
+    width: 70%;
+    height: 25px;
+
+}
+
+.skills-type .JavaScript-skill .rate .JavaScript-prog::after{
+
+    content: "70%";
+    position: absolute;
+    color: var(--mianColor);
+    background-color: var(--section-background);
+    padding: 8px;
+    top: -45px;
+    left: 66%;
+    border-radius: 20%;
+
+}
+
+.skills-type .Python-skill .rate .Python-prog{
+
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: var(--section-background);
+
+}
+
+.skills-type .Python-skill .rate .Python-prog::before{
+
+    content: "";
+    position: absolute;
+    left: 0px;
+    background-color: var(--mianColor);
+    width: 80%;
+    height: 25px;
+
+}
+
+.skills-type .Python-skill .rate .Python-prog::after{
+
+    content: "80%";
+    position: absolute;
+    color: var(--mianColor);
+    background-color: var(--section-background);
+    padding: 8px;
+    top: -45px;
+    left: 77%;
+    border-radius: 20%;
+
+}
+
+/*End Our-Skills*/
