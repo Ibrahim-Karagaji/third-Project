@@ -26,9 +26,9 @@ body{
     --fontOfBigScreen: 20px;
     --fontOfMiddleScreen: 17px;
     --fontOfSmallScreen: 14px;
-    --fontIconOfBigScreen: 30px;
+    --fontIconOfBigScreen: 40px;
     --fontIconOfMddleScreen: 30px;
-    --fontIconOfSmallScreen: 30px;
+    --fontIconOfSmallScreen: 25px;
 
 }
 
@@ -1236,6 +1236,167 @@ header .TitlesOfWebSite a:hover::before {
 .Services{
 
     background-color: var(--section-background);
+
+}
+
+.Services .container{
+
+    margin: var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.Services .container{
+
+    margin: var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.Services .container{
+
+    margin: var(--marginOfSmallScreen);
+
+}
+}
+
+.Services .skills{
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+
+}
+
+@media(max-width:1115px){
+.Services .skills{
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+}
+
+@media(max-width:550px){
+.Services .skills{
+
+    display: grid;
+    grid-template-columns: auto;
+
+}
+}
+
+.Services .skill{
+
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 10px -5px black;
+    transition: .5s;
+
+}
+
+.Services .skill::before{
+
+    content: "";
+    position: absolute;
+    background-color: var(--mianColor);
+    left:0px;
+    top:-5px;
+    height:10px;
+    width:0%;
+    transition: .5s;
+
+}
+
+.Services .skill:hover::before{
+
+    width: 100%;
+
+}
+
+.Services .skill:hover{
+
+    transform: translate(0px,-10px);
+
+}
+
+.Services .skill i{
+
+    margin-top: 20px;
+    color: var(--section-background);
+
+}
+
+@media(max-width:550px){
+.Services .skill i{
+
+    font-size: var(--fontIconOfBigScreen);
+
+}
+}
+
+.Services .skill h2{
+
+    margin: 20px 0px;
+    color: var(--mianColor);
+    font-size: var(--fontOfMiddleScreen);
+
+}
+
+@media(max-width:950px){
+.Services .skill h2{
+
+    font-size: var(--fontOfSmallScreen);
+
+}
+}
+
+.skill .info-of-skill{
+
+    display: flex;
+    width:100%;
+    background-color: var(--section-background);
+    font-size: var(--fontOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.skill .info-of-skill{
+
+    font-size: var(--fontOfMiddleScreen);
+
+}
+}
+
+.skill .info-of-skill h2{
+
+    margin: 0px;
+    padding: 15px 0px;
+    width: 15%;
+    background-color: var(--mianColor);
+    color: white;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+}
+
+.skill .info-of-skill div{
+
+    width: 15%;
+    background-color: #7777773b;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+}
+
+.skill .info-of-skill p{
+
+    color: var(--mianColor);
+    text-align: end;
+    width: 70%;
+    font-weight: bold;
 
 }
 
