@@ -1430,6 +1430,7 @@ header .TitlesOfWebSite a:hover::before {
 
 .Our-Skills .type-of-our-skills{
 
+    padding: var(--marginOfBigScreen) 0px;
     display: flex;
 
 }
@@ -1446,7 +1447,7 @@ header .TitlesOfWebSite a:hover::before {
 .type-of-our-skills img{
 
     display:none;
-    
+
 }
 }
 
@@ -1583,3 +1584,35 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Our-Skills*/
+
+/*Start How-It-Works*/
+
+.How-It-Works{
+
+    background-color: var(--section-background);
+
+}
+
+.How-It-Works .container{
+
+   margin: var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.How-It-Works{
+
+    margin: var(--marginOfMiddleScreen);
+}
+}
+
+@media(max-width:550px){
+.How-It-Works .container{
+
+    margin: var(--marginOfSmallScreen);
+}
+}
+
+
+
+/*End How-It-Works*/
