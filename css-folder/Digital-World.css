@@ -1226,6 +1226,7 @@ header .TitlesOfWebSite a:hover::before {
 .images-of-team-mebers p{
 
     transform: translate(50px,-5px);
+    color: var(--paragraphColor);
 
 }
 
@@ -1587,32 +1588,146 @@ header .TitlesOfWebSite a:hover::before {
 
 /*Start How-It-Works*/
 
-.How-It-Works{
+.Work{
 
     background-color: var(--section-background);
 
 }
 
-.How-It-Works .container{
+.Work .container{
 
    margin: var(--marginOfBigScreen);
 
 }
 
 @media(max-width:950px){
-.How-It-Works{
+.Work .container{
 
     margin: var(--marginOfMiddleScreen);
+
 }
 }
 
 @media(max-width:550px){
-.How-It-Works .container{
+.Work .container{
 
     margin: var(--marginOfSmallScreen);
+
 }
 }
 
+.Work .body-of-work{
 
+    padding:var(--marginOfBigScreen) 0px;
+    display: flex;
+    gap: 50px;
+
+}
+
+@media(max-width:1100px){
+.Work .body-of-work{
+
+    display: flex;
+    flex-direction: column;
+
+}
+}
+
+.Work .body-of-work .work-img{
+
+    width: 500px;
+
+}
+
+@media(max-width:1100px){
+.Work .body-of-work .work-img{
+
+    display: flex;
+    align-self: center;
+    width: 250px;
+
+}
+}
+
+.body-of-work .work-titles{
+
+    display: grid;
+
+}
+
+.body-of-work .work-titles .box{
+
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #f6f5f5;
+    border: white 2px solid;
+    border-radius: 2%;
+    font-size: var(--fontOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.body-of-work .work-titles .box{
+
+    font-size: var(--fontOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.body-of-work .work-titles .box{
+
+    font-size: var(--fontOfSmallScreen);
+
+}
+}
+
+.body-of-work .work-titles .box::before{
+
+    content: "";
+    position: absolute;
+    background-color: #ededed5d;
+    height: 0%;
+    width: 100%;
+    left: 0%;
+    transition: .5s;
+
+}
+
+.body-of-work .work-titles .box:hover::before{
+
+    height: 100%;
+
+}
+
+.body-of-work .work-titles .box img{
+
+    height: 65px;
+    padding: 0px 20px;
+
+}
+
+@media(max-width:550px){
+.body-of-work .work-titles .box img{
+
+    height: 40px;
+
+}
+}
+
+.body-of-work .work-titles .box h3{
+
+    color: var(--mianColor);
+
+}
+
+.body-of-work .work-titles .box p{
+
+    color: var(--paragraphColor);
+    padding-right: 10px;
+
+}
 
 /*End How-It-Works*/
