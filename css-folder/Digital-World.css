@@ -1734,3 +1734,169 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End How-It-Works*/
+
+/*Start Latest-Events*/
+
+.Latest-Events .container{
+
+    margin: var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+.Latest-Events .container{
+
+    margin: var(--marginOfMiddleScreen);
+    
+}
+}
+
+@media(max-width:550px){
+.Latest-Events .container{
+
+    margin: var(--marginOfSmallScreen);
+
+}
+}
+
+.Latest-Events .info-of-Latest-Events{
+
+    padding: var(--marginOfBigScreen) 0px;
+    display: flex;
+
+}
+
+.Latest-Events .info-of-Latest-Events img {
+
+    width: 400px;
+
+}
+
+@media(max-width:950px){
+.Latest-Events .info-of-Latest-Events img {
+
+    display: none;
+
+}
+}
+
+.info-of-Latest-Events .info{
+
+    text-align: center;
+    margin: auto 0px;
+
+}
+
+@media(max-width:550px){
+.info-of-Latest-Events .info{
+
+    font-size: var(--fontOfSmallScreen);
+
+}
+}
+
+.info-of-Latest-Events .info span{
+
+    position: relative;
+    padding: 20px;
+    border-top: solid 1px rgb(0 0 0 / 19%);
+
+}
+
+@media(max-width:550px){
+.info-of-Latest-Events .info span{
+
+    padding: 10px;
+
+}
+}
+
+.info-of-Latest-Events .info span::before{
+
+    content: "100";
+    position: absolute;
+    color: var(--mianColor);
+    left: 25px;
+    top: -60px;
+    padding: 10px;
+    border: solid rgba(128, 0, 128, 0.363) 2px;
+    border-radius: 30%;
+
+}
+
+.info-of-Latest-Events .info h2{
+
+    color: var(--mianColor);
+    padding: 20px 0px;
+
+}
+
+.info-of-Latest-Events .info p{
+
+    color:var(--paragraphColor);
+    line-height: 1.5;
+
+}
+
+.Latest-Events .subscribe{
+
+    padding: 20px;
+    border-radius: 50px;
+    background-color: var(--section-background);
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0px auto;
+
+}
+
+@media(max-width:550px){
+.Latest-Events .subscribe{
+
+    padding: 10px;
+
+}
+}
+
+.Latest-Events .subscribe .email-input{
+
+   border :var(--section-background) 20px solid;
+   border-radius: 50px;
+   padding: 10px;
+
+}
+
+@media(max-width:550px){
+.Latest-Events .subscribe .email-input{
+
+   border :var(--section-background) 10px solid;
+
+}
+}
+
+.Latest-Events .subscribe .email-input:focus{
+
+    outline: none;
+    border-color: none;
+    
+}
+
+.Latest-Events .subscribe .subscribe-input{
+
+    border: var(--mianColor) 30px solid;
+    border-radius: 50px;
+    color: white;
+    background-color: var(--mianColor);
+    margin-right: 20px;
+
+}
+
+@media(max-width:550px){
+.Latest-Events .subscribe .subscribe-input{
+
+    border: var(--mianColor) 10px solid;
+    margin-right: 10px;
+}
+}
+
+/*End Latest Events*/
