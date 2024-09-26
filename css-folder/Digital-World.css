@@ -257,7 +257,7 @@ body{
 header {
 
     background-color: white;
-    box-shadow: 0px -20px 15px 15px black;
+    box-shadow: 0px 0px 10px -5px black;
 
 }
 
@@ -1637,7 +1637,7 @@ header .TitlesOfWebSite a:hover::before {
 
 .Work .body-of-work .work-img{
 
-    width: 500px;
+    width: 300px;
 
 }
 
@@ -1655,6 +1655,7 @@ header .TitlesOfWebSite a:hover::before {
 
     display: grid;
     gap: 20px;
+    margin-left: 20px;
 
 }
 
@@ -1900,3 +1901,165 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Latest Events*/
+
+/*Start Pricing-Plans*/
+
+.Pricing-Plans{
+
+    background-color: var(--section-background);
+
+}
+
+.Pricing-Plans .container{
+
+    padding: var(--marginOfBigScreen) 0px;
+    margin:var(--marginOfBigScreen);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+
+}
+
+@media(max-width:950px){
+.Pricing-Plans .container{
+
+    margin:var(--marginOfMiddleScreen);
+    grid-template-columns: auto auto;
+
+}
+}
+
+@media(max-width:750px){
+.Pricing-Plans .container{
+
+    margin:var(--marginOfSmallScreen);
+    grid-template-columns: auto ;
+
+}
+}
+
+.container .plan-type{
+
+    position: relative;
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0px 0px 10px -5px black;
+    background-color: white;
+
+}
+
+.container .plan-type::after{
+
+    content: "Most Popular";
+    position: absolute;
+    right:20px;
+    writing-mode: vertical-rl;
+    background-color: var(--mianColor);
+    color:white;
+    padding:40px 20px;
+
+}
+
+.container .plan-type::before{
+
+    content: "";
+    position: absolute;
+    right: 19px;
+    top: 115px;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    z-index: 1;
+
+}
+
+.container .plan-type .Pricing{
+
+    text-align: center;
+
+}
+
+.container .plan-type .Pricing i{
+    
+    padding: 10px 0px;
+    font-size: 70px;
+    color: var(--mianColor);
+    
+}
+
+.container .plan-type .Pricing h1{
+    
+    margin: 30px 0px;
+    color:var(--mianColor);
+    position: relative;
+    font-size: 70px;
+
+}
+
+.container .plan-type .Pricing h1::before{
+    
+    content: "Per Month";
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+    padding: 10px;
+    font-size: 15px;
+    color: #ccc;
+
+}
+
+@media(max-width:750px){
+.container .plan-type .Pricing h1::before{
+    
+    left: 43%;
+
+}
+}
+
+.container .plan-type .features div{
+    
+    border-top: solid 1px #ccc;
+    padding: 20px;
+
+}
+
+.container .plan-type .features div i{
+    
+    color: var(--mianColor);
+    padding-right: 10px;
+    font-size: var(--fontIconOfSmallScreen);
+
+}
+
+.container .plan-type .features div span{
+    
+    font-weight: bold;
+    font-size: var(--fontOfSmallScreen);
+
+}
+
+.container .plan-type .choose-click {
+    
+    margin:20px auto;
+
+}
+
+.container .plan-type .choose-click a{
+    
+    color: var(--mianColor);
+    border: var(--mianColor) 3px solid;
+    border-radius: 10%;
+    background-color: white;
+    padding: 20px;
+    transition: .5s;
+
+}
+
+.container .plan-type .choose-click a:hover{
+    
+    color: white;
+    background-color: var(--mianColor);
+}
+
+/*End Pricing-Plans*/
