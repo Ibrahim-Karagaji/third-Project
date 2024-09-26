@@ -105,7 +105,7 @@ body{
 
 }
 
-.mainTitle h1 {
+.mainTitle h2 {
 
     position: relative;
     padding: 10px 20px;
@@ -114,7 +114,7 @@ body{
 
 }
 
-.mainTitle h1:hover {
+.mainTitle h2:hover {
 
     background-color: var(--mianColor);
     color: white;
@@ -124,22 +124,22 @@ body{
 }
 
 @media(max-width:950px) {
-.mainTitle h1{
+.mainTitle h2{
+
+    font-size: var(--fontOfBigScreen);
+
+}
+}
+
+@media(max-width:550px) {
+.mainTitle h2{
 
     font-size: var(--fontOfMiddleScreen);
 
 }
 }
 
-@media(max-width:950px) {
-.mainTitle h1{
-
-    font-size: var(--fontOfMiddleScreen);
-
-}
-}
-
-.mainTitle h1::before {
+.mainTitle h2::before {
 
     content: "";
     position: absolute;
@@ -154,7 +154,7 @@ body{
 }
 
 @media(max-width:950px){
-.mainTitle h1::before {
+.mainTitle h2::before {
 
     height: 10px;
     width: 10px;
@@ -163,7 +163,7 @@ body{
 }
 }
 
-.mainTitle h1:hover::before {
+.mainTitle h2:hover::before {
 
     content: "";
     position: absolute;
@@ -177,7 +177,7 @@ body{
 }
 
 @media(max-width:950px){
-.mainTitle h1:hover::before {
+.mainTitle h2:hover::before {
 
     height: 10px;
     width: 10px;
@@ -185,7 +185,7 @@ body{
 }
 }
 
-.mainTitle h1::after {
+.mainTitle h2::after {
 
     content: "";
     position: absolute;
@@ -200,7 +200,7 @@ body{
 }
 
 @media(max-width:950px){
-.mainTitle h1::after {
+.mainTitle h2::after {
 
     height: 10px;
     width: 10px;
@@ -209,7 +209,7 @@ body{
 }
 }
 
-.mainTitle h1:hover::after {
+.mainTitle h2:hover::after {
 
     content: "";
     position: absolute;
@@ -223,7 +223,7 @@ body{
 }
 
 @media(max-width:950px){
-.mainTitle h1:hover::after {
+.mainTitle h2:hover::after {
 
     height: 10px;
     width: 10px;
@@ -915,6 +915,7 @@ header .TitlesOfWebSite a:hover::before {
 
 .feature p{
 
+    line-height: 1.5;
     color: var(--paragraphColor);
     padding: 0px 20px;
 
@@ -1074,6 +1075,7 @@ header .TitlesOfWebSite a:hover::before {
 
 .Cards-Of-Testimonials .card p{
 
+    line-height: 1.5;
     color: var(--paragraphColor);
 
 }
@@ -1652,6 +1654,7 @@ header .TitlesOfWebSite a:hover::before {
 .body-of-work .work-titles{
 
     display: grid;
+    gap: 20px;
 
 }
 
@@ -1659,7 +1662,6 @@ header .TitlesOfWebSite a:hover::before {
 
     position: relative;
     display: flex;
-    gap: 20px;
     align-items: center;
     background-color: #f6f5f5;
     border: white 2px solid;
@@ -1688,7 +1690,7 @@ header .TitlesOfWebSite a:hover::before {
 
     content: "";
     position: absolute;
-    background-color: #ededed5d;
+    background-color: #ededed6e;
     height: 0%;
     width: 100%;
     left: 0%;
@@ -1727,6 +1729,7 @@ header .TitlesOfWebSite a:hover::before {
 
     color: var(--paragraphColor);
     padding-right: 10px;
+    line-height: 1.5;
 
 }
 
