@@ -2056,3 +2056,106 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Pricing-Plans*/
+
+/*End Top-Videos*/
+
+.Top-Videos .container{
+
+    display: flex;
+    gap: 10px;
+    margin: var(--marginOfBigScreen);
+    background-color: var(--section-background);
+    border: 5px solid #f4f4f4;
+    font-size: var(--fontOfMiddleScreen);
+
+}
+
+@media(max-width:950px){
+.Top-Videos .container{
+
+    display: flex;
+    flex-direction: column;
+    margin: var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.Top-Videos .container{
+
+    margin: var(--marginOfSmallScreen);
+    font-size: var(--fontOfSmallScreen);
+
+}
+}
+
+.Top-Videos .container .list{
+
+    display: grid;
+
+}
+
+.Top-Videos .container .list .title{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#f4f4f4;
+    padding: 10px;
+    color: var(--mianColor);
+
+}
+
+.Top-Videos .container .list .info{
+
+    padding: 10px;
+    background-color: white;
+    border-top: #f4f4f4 1px solid;
+
+}
+
+.Top-Videos .container .list .info p{
+
+    transition: .5s;
+    line-height: 1.5;
+
+}
+
+.Top-Videos .container .list .info p:hover{
+
+    color: var(--mianColor);
+
+}
+
+.Top-Videos .container .list .info span{
+
+    color: var(--paragraphColor);
+
+}
+
+
+.Top-Videos .container .description{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.Top-Videos .container .description img {
+
+    max-width: 100%;
+    padding: 10px;
+
+}
+
+.Top-Videos .container .description p{
+
+    background-color: white;
+    color: var(--paragraphColor);
+    padding: 10px;
+    margin: 20px;
+
+}
+
+/*End Top-Videos*/
