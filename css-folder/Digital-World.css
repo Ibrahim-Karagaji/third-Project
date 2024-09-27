@@ -2159,3 +2159,140 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Top-Videos*/
+
+/*End Our-Awesome-Stats*/
+
+.Our-Awesome-Stats{
+
+    background-image: url(../imges-folder/stats.jpg);
+    background-color: white;
+
+}
+
+.Our-Awesome-Stats .container{
+
+    height: 100%;
+    max-width: 100%;
+    padding:var(--marginOfBigScreen);
+    background-color: rgba(255, 255, 255, 0.945);
+
+}
+
+@media(max-width:950px){
+.Our-Awesome-Stats .container{
+
+    padding:var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+.Our-Awesome-Stats .container{
+
+    padding:var(--marginOfSmallScreen);
+
+}
+}
+
+.Our-Awesome-Stats .container h1{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+@media(max-width:550px){
+.Our-Awesome-Stats .container h1{
+
+    font-size: var(--marginOfMiddleScreen);
+
+
+}
+}
+
+.Our-Awesome-Stats .container .boxes{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: var(--fontOfMiddleScreen);
+
+}
+
+@media(max-width:1115px){
+.Our-Awesome-Stats .container .boxes{
+
+    grid-template-columns: auto auto ;
+}
+}
+
+@media(max-width:650px){
+.Our-Awesome-Stats .container .boxes{
+
+    grid-template-columns: auto ;
+}
+}
+
+.Our-Awesome-Stats .container .boxes .box{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 100px;
+    position: relative;
+    background-color: white;
+
+}
+
+.Our-Awesome-Stats .container .boxes .box::before{
+
+    content: "";
+    position: absolute;
+    background-color: var(--mianColor);
+    left: 0px;
+    top:0px;
+    width: 5px;
+    transition: .5s;
+    height: 0%;
+
+}
+
+.Our-Awesome-Stats .container .boxes .box:hover::before{
+
+    height: 100%;
+
+}
+
+.Our-Awesome-Stats .container .boxes .box::after{
+
+    content: "";
+    position: absolute;
+    background-color: var(--mianColor);
+    bottom: 0px;
+    right:0px;
+    width: 5px;
+    transition: .5s;
+    height: 0%;
+
+}
+
+.Our-Awesome-Stats .container .boxes .box:hover::after{
+
+    height: 100%;
+
+}
+
+.Our-Awesome-Stats .container .boxes .box h3{
+
+    color: var(--mianColor);
+    margin: 0px;
+
+}
+
+.Our-Awesome-Stats .container .boxes .box i{
+
+    font-size: var(--fontIconOfMddleScreen);
+
+}
+
+/*End Our-Awesome-Stats*/
