@@ -109,7 +109,7 @@ body{
 
     position: relative;
     padding: 10px 20px;
-    font-size: var(--fontIconOfBigScreen);
+    font-size: var(--fontIconOfMddleScreen);
     border: black 3px solid;
 
 }
@@ -120,21 +120,14 @@ body{
     color: white;
     transition: .4s;
     border-color: transparent;
+    
 
-}
-
-@media(max-width:950px) {
-.mainTitle h2{
-
-    font-size: var(--fontOfBigScreen);
-
-}
 }
 
 @media(max-width:550px) {
 .mainTitle h2{
 
-    font-size: var(--fontOfMiddleScreen);
+    font-size: var(--fontOfBigScreen);
 
 }
 }
