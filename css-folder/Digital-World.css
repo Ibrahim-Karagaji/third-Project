@@ -2439,3 +2439,199 @@ header .TitlesOfWebSite a:hover::before {
 }
 
 /*End Discount*/
+
+/*End Discount*/
+
+footer{
+
+    background-color: #191919;
+    width: 100%;
+
+}
+
+footer .container{
+
+    padding: var(--marginOfBigScreen);
+
+}
+
+@media(max-width:950px){
+footer .container{
+
+    padding: var(--marginOfMiddleScreen);
+
+}
+}
+
+@media(max-width:550px){
+footer .container{
+
+    padding: var(--marginOfSmallScreen);
+
+}
+}
+
+footer .body-of-footer{
+
+    display:flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media(max-width:1075px){
+footer .body-of-footer{
+
+    display:flex;
+    flex-direction: column;
+
+}
+}
+
+.body-of-footer .about-me h1{
+
+    font-size: var(--fontIconOfMddleScreen);
+    color: white;
+
+}
+
+@media(max-width:1075px){
+.body-of-footer .about-me{
+
+    text-align: center;
+
+}
+}
+
+.body-of-footer .about-me i{
+
+    font-size: var(--fontIconOfMddleScreen);
+    padding: 15px;
+    background-color: #313131;
+    border-radius: 10px;
+    color:white;
+    transition: .5s;
+
+}
+
+.body-of-footer .about-me i:hover{
+
+    background-color: var(--mianColor);
+
+}
+
+.body-of-footer .about-me p{
+
+    color:var(--section-background);
+    width: 250px;
+    line-height: 1.5;
+
+}
+
+.body-of-footer .links {
+
+    display: grid;
+    gap:10px;
+
+}
+
+.body-of-footer .links div{
+
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-bottom:1px solid var(--paragraphColor);
+    transition: .5s;
+
+}
+
+.body-of-footer .links div:hover{
+
+    transform: translate(10px,0px);
+
+}
+
+.body-of-footer .links div i{
+
+    color: var(--mianColor);
+
+}
+
+.body-of-footer .links div p{
+
+    color:var(--section-background);
+
+}
+
+.body-of-footer .links div:hover p{
+
+    color:white;
+
+}
+
+.body-of-footer .location{
+
+    display:grid;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.body-of-footer .location div{
+
+    display:flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.body-of-footer .location div i{
+
+    font-size: var(--fontIconOfMddleScreen);
+    color:var(--mianColor)
+
+}
+
+.body-of-footer .location div p{
+
+    color: var(--section-background)
+
+}
+
+.body-of-footer .images {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+@media(max-width:950px){
+.body-of-footer .images {
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+}
+
+.body-of-footer .images img{
+
+    width: 80px;
+    border: var(--section-background) 5px solid; 
+    margin: 3px;
+}
+
+footer .end{
+
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    color: var(--section-background);
+    border-top:var(--paragraphColor) 1px solid;
+    text-align: center;
+    font-size: var(--fontOfMiddleScreen);
+
+}
+
+/*End Discount*/
