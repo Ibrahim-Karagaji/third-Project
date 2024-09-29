@@ -219,7 +219,7 @@ body{
 .HomePage{
 
     background-color: var(--section-background);
-    height: 95vh;
+    height: 100vh;
     border-bottom-right-radius: 100%;
 
 }
@@ -279,7 +279,7 @@ header .nameOfWebSite {
 header .TitlesOfWebSite a {
 
     position: relative;
-    padding: 20px;
+    padding: 27px;
     animation-duration: 10s;
 
 }
@@ -287,7 +287,7 @@ header .TitlesOfWebSite a {
 @media(max-width: 950px) {
 header .TitlesOfWebSite a {
 
-    padding: 5px;
+    padding: 10px;
 
 }
 }
@@ -305,10 +305,11 @@ header .TitlesOfWebSite a::before {
  
     content: ""; 
     width: 0%;
+    background-color: var(--mianColor);
+    height: 10px;
     position: absolute;
     left:0px;
-    top:-9px;
-    border: transparent 5px solid;
+    top:0px;
     transition: var(--mainTransition);
 
 }
@@ -316,9 +317,7 @@ header .TitlesOfWebSite a::before {
 @media(max-width: 950px){
 header .TitlesOfWebSite a::before {
 
-    width: 0%;
-    top: -6px;
-    border: transparent 4px solid;
+    height: 8px;
 
 }
 }
@@ -326,9 +325,7 @@ header .TitlesOfWebSite a::before {
 @media(max-width: 550px){
 header .TitlesOfWebSite a::before {
 
-    width: 0%;
-    top: -3px;
-    border: transparent 2px solid;
+    height: 5px;
 
 }
 }
@@ -336,26 +333,7 @@ header .TitlesOfWebSite a::before {
 header .TitlesOfWebSite a:hover::before {
 
     width: 100%;
-    border: var(--mianColor) 5px solid;
 
-}
-
-@media(max-width: 950px){
-header .TitlesOfWebSite a:hover::before {
-
-    width: 100%;
-    border: var(--mianColor) 4px solid;
-
-}
-}
-
-@media(max-width: 550px){
-header .TitlesOfWebSite a:hover::before {
-
-    width: 100%;
-    border: var(--mianColor) 2px solid;
-
-}
 }
 
 /*End Header*/
