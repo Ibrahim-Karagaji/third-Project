@@ -457,14 +457,14 @@ header .TitlesOfWebSite a:hover::before {
 
 .articles{
 
-    margin: var(--marginOfBetweenSubjects) var(--marginOfBigScreen);
+    margin: var(--marginOfBigScreen);
 
 }
 
 @media(max-width:950px){
 .articles{
 
-    margin: var(--marginOfBetweenSubjects) var(--marginOfMiddleScreen);
+    margin: var(--marginOfMiddleScreen);
 
 }
 }
@@ -472,7 +472,7 @@ header .TitlesOfWebSite a:hover::before {
 @media(max-width:550px){
 .articles{
 
-    margin: 0px var(--marginOfSmallScreen);
+    margin: var(--marginOfSmallScreen);
 
 }
 }
@@ -596,7 +596,7 @@ header .TitlesOfWebSite a:hover::before {
 .gallery .container{
 
     margin: var(--marginOfBigScreen);
-    padding:var(--marginOfBigScreen) 0px;
+
 
 }
 
@@ -621,6 +621,7 @@ header .TitlesOfWebSite a:hover::before {
     display: grid;
     gap: 30px;
     grid-template-columns: auto auto auto;
+    padding:var(--marginOfBigScreen) 0px;
     
 }
 
