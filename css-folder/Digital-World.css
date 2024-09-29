@@ -218,7 +218,6 @@ body{
 
 .HomePage{
 
-    margin-bottom: var(--marginOfBigScreen);
     background-color: var(--section-background);
     height: 95vh;
     border-bottom-right-radius: 100%;
