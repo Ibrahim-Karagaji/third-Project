@@ -29,6 +29,7 @@ body{
     --fontIconOfBigScreen: 40px;
     --fontIconOfMddleScreen: 30px;
     --fontIconOfSmallScreen: 25px;
+    --mainTransition: .5s;
 
 }
 
@@ -52,6 +53,7 @@ body{
 
 0% {
     transform: translate(0px,20px);
+    
  }
 
 50% {
@@ -118,7 +120,7 @@ body{
 
     background-color: var(--mianColor);
     color: white;
-    transition: .4s;
+    transition: var(--mainTransition);
     border-color: transparent;
     
 
@@ -142,7 +144,7 @@ body{
     background-color: var(--mianColor);
     left: -30px;
     border-radius: 50%;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -188,7 +190,7 @@ body{
     background-color: var(--mianColor);
     right: -30px;
     border-radius: 50%;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -322,7 +324,7 @@ header .TitlesOfWebSite a::before {
     left:0px;
     top:-9px;
     border: transparent 5px solid;
-    transition: 1s;
+    transition: var(--mainTransition);
 
 }
 
@@ -539,7 +541,7 @@ header .TitlesOfWebSite a:hover::before {
     width: fit-content;
     box-shadow: 0px 0px 10px -5px black;
     font-size: var(--fontOfMiddleScreen);
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -689,7 +691,7 @@ header .TitlesOfWebSite a:hover::before {
     height:50px;
     left: 50%;
     top: 50%;
-    transition: .3s;
+    transition: var(--mainTransition);
     
 }
 
@@ -703,7 +705,7 @@ header .TitlesOfWebSite a:hover::before {
 .gallery img{
 
     width: 100%;
-    transition: 0.5s;  
+    transition: var(--mainTransition);  
 
 }
 
@@ -922,7 +924,7 @@ header .TitlesOfWebSite a:hover::before {
     margin: 21px auto;
     border: 3px solid hsl(3, 90%, 58%);
     border-radius: 6%;
-    transition: .5s;
+    transition: var(--mainTransition);
     font-weight: bold;
 
 }
@@ -942,7 +944,7 @@ header .TitlesOfWebSite a:hover::before {
     margin: 21px auto;
     border: 3px solid #009688;
     border-radius: 6%;
-    transition: .5s;
+    transition: var(--mainTransition);
     font-weight: bold;
 
 }
@@ -962,7 +964,7 @@ header .TitlesOfWebSite a:hover::before {
     margin: 21px auto;
     border: 3px solid #03a9f4;
     border-radius: 6%;
-    transition: .5s;
+    transition: var(--mainTransition);
     font-weight: bold;
 
 }
@@ -1151,7 +1153,7 @@ header .TitlesOfWebSite a:hover::before {
 
     width: 300px;
     border-radius: 5%;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -1290,7 +1292,7 @@ header .TitlesOfWebSite a:hover::before {
     position: relative;
     background-color: white;
     box-shadow: 0px 0px 10px -5px black;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -1303,7 +1305,7 @@ header .TitlesOfWebSite a:hover::before {
     top:-5px;
     height:5px;
     width:0%;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -1688,7 +1690,7 @@ header .TitlesOfWebSite a:hover::before {
     height: 0%;
     width: 100%;
     left: 0%;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -2045,7 +2047,7 @@ header .TitlesOfWebSite a:hover::before {
     border-radius: 10%;
     background-color: white;
     padding: 20px;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -2116,7 +2118,7 @@ header .TitlesOfWebSite a:hover::before {
 
 .Top-Videos .container .list .info p{
 
-    transition: .5s;
+    transition: var(--mainTransition);
     line-height: 1.5;
 
 }
@@ -2251,7 +2253,7 @@ header .TitlesOfWebSite a:hover::before {
     left: 0px;
     top:0px;
     width: 5px;
-    transition: .5s;
+    transition: var(--mainTransition);
     height: 0%;
 
 }
@@ -2270,7 +2272,7 @@ header .TitlesOfWebSite a:hover::before {
     bottom: 0px;
     right:0px;
     width: 5px;
-    transition: .5s;
+    transition: var(--mainTransition);
     height: 0%;
 
 }
@@ -2432,7 +2434,7 @@ header .TitlesOfWebSite a:hover::before {
     background-color: var(--mianColor);
     color: white;
     font-weight: bold;
-    transition: .5s;
+    transition: var(--mainTransition);
     font-size: var(--fontOfMiddleScreen);
     border: 1px solid #ccc;
 
@@ -2511,7 +2513,7 @@ footer .body-of-footer{
     background-color: #313131;
     border-radius: 10px;
     color:white;
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
@@ -2542,7 +2544,7 @@ footer .body-of-footer{
     align-items: center;
     gap:10px;
     border-bottom:1px solid var(--paragraphColor);
-    transition: .5s;
+    transition: var(--mainTransition);
 
 }
 
