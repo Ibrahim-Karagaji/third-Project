@@ -2370,7 +2370,7 @@ footer .container{
 footer .body-of-footer{
 
     display:flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
 
@@ -2522,10 +2522,9 @@ footer .end{
 
     display: flex;
     justify-content: center;
-    padding:10px;
+    padding: 20px;
     color: var(--section-background);
     border-top:var(--paragraphColor) 1px solid;
-    text-align: center;
     font-size: var(--fontOfMiddleScreen);
 
 }
