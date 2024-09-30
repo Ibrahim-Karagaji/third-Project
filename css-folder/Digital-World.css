@@ -734,22 +734,13 @@ header .TitlesOfWebSite a:hover::before {
     gap: 20px;
     text-align: center;
     border: var(--paragraphColor) 1px solid;
-    font-size: var(--fontOfBigScreen);
 
-}
-
-@media(max-width:950px){
-.features-type .feature{
-
-    font-size: var(--fontOfMiddleScreen);
-
-}
 }
 
 @media(max-width:550px){
 .features-type .feature{
 
-    font-size: var(--fontOfSmallScreen);
+    font-size: var(--fontOfMiddleScreen);
 
 }
 }
@@ -765,19 +756,7 @@ header .TitlesOfWebSite a:hover::before {
     position: absolute;
     background-color: #f43f3685;
     width: 100%;
-    height: 100%;
-
-}
-
-.feature .color-of-features-images-1::after{
-
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 5%;
-    background-color: white;
+    height: 99%;
 
 }
 
@@ -786,19 +765,7 @@ header .TitlesOfWebSite a:hover::before {
     position: absolute;
     background-color: #00968783;
     width: 100%;
-    height: 100%;
-
-}
-
-.feature .color-of-features-images-2::after{
-
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 5%;
-    background-color: white;
+    height: 99%;
 
 }
 
@@ -807,19 +774,7 @@ header .TitlesOfWebSite a:hover::before {
     position: absolute;
     background-color: #03a8f479;
     width: 100%;
-    height: 100%;
-
-}
-
-.feature .color-of-features-images-3::after{
-
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 5%;
-    background-color: white;
+    height: 99%;
 
 }
 
