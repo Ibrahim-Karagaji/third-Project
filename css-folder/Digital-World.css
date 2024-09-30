@@ -843,7 +843,6 @@ header .TitlesOfWebSite a:hover::before {
 
 .feature .feature-link-1{
 
-    position: relative;
     color: #f44036;
     padding: 10px 30px;
     margin: 21px auto;
@@ -939,7 +938,7 @@ header .TitlesOfWebSite a:hover::before {
 
     padding: var(--marginOfBigScreen) 0px;
     display: grid;
-    gap:30px;
+    gap:20px;
     grid-template-columns: auto auto auto;
 
 }
@@ -1007,7 +1006,7 @@ header .TitlesOfWebSite a:hover::before {
 .Team-Members .container{
 
     margin: var(--marginOfBigScreen);
-
+    
 }
 
 @media(max-width:950px){
