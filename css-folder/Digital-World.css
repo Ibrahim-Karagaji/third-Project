@@ -1084,7 +1084,6 @@ header .TitlesOfWebSite a:hover::before {
 
     width: 300px;
     border-radius: 5%;
-    transition: var(--mainTransition);
 
 }
 
@@ -1359,8 +1358,6 @@ header .TitlesOfWebSite a:hover::before {
 
 .type-of-our-skills .skills-type{
 
-    display: flex;
-    flex-direction: column;
     width: 100%;
 
 }
