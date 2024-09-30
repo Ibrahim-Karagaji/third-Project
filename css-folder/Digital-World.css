@@ -1056,6 +1056,13 @@ header .TitlesOfWebSite a:hover::before {
 .images-of-team-mebers div{
 
     position: relative;
+    transition: var(--mainTransition);
+
+}
+
+.images-of-team-mebers div:hover{
+
+    filter: grayscale(80%);
 
 }
 
@@ -1078,13 +1085,6 @@ header .TitlesOfWebSite a:hover::before {
     width: 300px;
     border-radius: 5%;
     transition: var(--mainTransition);
-
-}
-
-.images-of-team-mebers img:hover{
-
-    transform: scale(1.1) ;
-    border-radius: 0%;
 
 }
 
