@@ -1629,7 +1629,7 @@ header .TitlesOfWebSite a:hover::before {
 .body-of-work .work-titles .box h3{
 
     color: var(--mianColor);
-    padding-right: 5px;
+
 
 }
 
@@ -1691,7 +1691,6 @@ header .TitlesOfWebSite a:hover::before {
 .info-of-Latest-Events .info{
 
     text-align: center;
-    margin: auto 0px;
 
 }
 
@@ -1724,11 +1723,10 @@ header .TitlesOfWebSite a:hover::before {
     content: "100";
     position: absolute;
     color: var(--mianColor);
-    left: 25px;
     top: -60px;
     padding: 10px;
     border: solid rgba(128, 0, 128, 0.363) 2px;
-    border-radius: 30%;
+    border-radius: 10%;
 
 }
 
@@ -1751,8 +1749,6 @@ header .TitlesOfWebSite a:hover::before {
     padding: 20px;
     border-radius: 50px;
     background-color: var(--section-background);
-    display: flex;
-    justify-content: center;
     width: fit-content;
     margin: 0px auto;
 
@@ -1770,14 +1766,15 @@ header .TitlesOfWebSite a:hover::before {
 
    border :var(--section-background) 20px solid;
    border-radius: 50px;
-   padding: 10px;
+   padding: 20px;
 
 }
 
 @media(max-width:550px){
 .Latest-Events .subscribe .email-input{
 
-   border :var(--section-background) 10px solid;
+   border:var(--section-background) 10px solid;
+   padding: 10px ;
 
 }
 }
@@ -1791,8 +1788,9 @@ header .TitlesOfWebSite a:hover::before {
 
 .Latest-Events .subscribe .subscribe-input{
 
-    border: var(--mianColor) 30px solid;
+    border: var(--mianColor) 20px solid;
     border-radius: 50px;
+    font-size: var(--fontOfMiddleScreen);
     color: white;
     background-color: var(--mianColor);
     margin-right: 20px;
