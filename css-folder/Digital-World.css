@@ -1848,7 +1848,7 @@ header .TitlesOfWebSite a:hover::before {
     position: relative;
     display: grid;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
     box-shadow: 0px 0px 10px -5px black;
     background-color: white;
 
@@ -1946,7 +1946,7 @@ header .TitlesOfWebSite a:hover::before {
 
 .container .plan-type .choose-click {
     
-    margin:20px auto;
+    margin: 40px auto;
 
 }
 
@@ -1954,7 +1954,7 @@ header .TitlesOfWebSite a:hover::before {
     
     color: var(--mianColor);
     border: var(--mianColor) 3px solid;
-    border-radius: 10%;
+    border-radius: 5%;
     background-color: white;
     padding: 20px;
     transition: var(--mainTransition);
@@ -1965,6 +1965,7 @@ header .TitlesOfWebSite a:hover::before {
     
     color: white;
     background-color: var(--mianColor);
+    
 }
 
 /*End Pricing-Plans*/
