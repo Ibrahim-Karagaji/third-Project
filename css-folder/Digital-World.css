@@ -1351,7 +1351,6 @@ header .TitlesOfWebSite a:hover::before {
 
 .Our-Skills .type-of-our-skills{
 
-    padding: var(--marginOfBigScreen) 0px;
     display: flex;
 
 }
@@ -1385,7 +1384,7 @@ header .TitlesOfWebSite a:hover::before {
     position: absolute;
     left: 0px;
     background-color: var(--mianColor);
-    width: 80%;
+    width: 75%;
     height: 25px;
 
 }
@@ -1431,7 +1430,7 @@ header .TitlesOfWebSite a:hover::before {
     background-color: var(--section-background);
     padding: 8px;
     top: -45px;
-    left: 81%;
+    left: 80%;
     border-radius: 20%;
 
 }
@@ -1464,7 +1463,7 @@ header .TitlesOfWebSite a:hover::before {
     background-color: var(--section-background);
     padding: 8px;
     top: -45px;
-    left: 66%;
+    left: 65%;
     border-radius: 20%;
 
 }
@@ -1497,7 +1496,7 @@ header .TitlesOfWebSite a:hover::before {
     background-color: var(--section-background);
     padding: 8px;
     top: -45px;
-    left: 77%;
+    left: 75%;
     border-radius: 20%;
 
 }
@@ -1560,7 +1559,6 @@ header .TitlesOfWebSite a:hover::before {
 @media(max-width:1100px){
 .Work .body-of-work .work-img{
 
-    display: flex;
     align-self: center;
     width: 250px;
 
@@ -1571,7 +1569,6 @@ header .TitlesOfWebSite a:hover::before {
 
     display: grid;
     gap: 20px;
-    margin-left: 20px;
 
 }
 
@@ -1583,19 +1580,10 @@ header .TitlesOfWebSite a:hover::before {
     background-color: #f6f5f5;
     border: white 2px solid;
     border-radius: 2%;
-    font-size: var(--fontOfBigScreen);
 
 }
 
 @media(max-width:950px){
-.body-of-work .work-titles .box{
-
-    font-size: var(--fontOfMiddleScreen);
-
-}
-}
-
-@media(max-width:550px){
 .body-of-work .work-titles .box{
 
     font-size: var(--fontOfSmallScreen);
@@ -1607,10 +1595,10 @@ header .TitlesOfWebSite a:hover::before {
 
     content: "";
     position: absolute;
-    background-color: #ededed6e;
+    background-color: #77777713;
     height: 0%;
-    width: 100%;
-    left: 0%;
+    width: 0%;
+    left: 50%;
     transition: var(--mainTransition);
 
 }
@@ -1618,20 +1606,22 @@ header .TitlesOfWebSite a:hover::before {
 .body-of-work .work-titles .box:hover::before{
 
     height: 100%;
+    width: 100%;
+    left: 0%;
 
 }
 
 .body-of-work .work-titles .box img{
 
-    height: 65px;
-    padding: 0px 20px;
+    height: 60px;
+    padding:0px 20px;
 
 }
 
 @media(max-width:550px){
 .body-of-work .work-titles .box img{
 
-    height: 40px;
+    height: 45px;
 
 }
 }
@@ -1639,6 +1629,7 @@ header .TitlesOfWebSite a:hover::before {
 .body-of-work .work-titles .box h3{
 
     color: var(--mianColor);
+    padding-right: 5px;
 
 }
 
