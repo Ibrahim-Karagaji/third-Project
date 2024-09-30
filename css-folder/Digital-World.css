@@ -1965,7 +1965,7 @@ header .TitlesOfWebSite a:hover::before {
     
     color: white;
     background-color: var(--mianColor);
-    
+
 }
 
 /*End Pricing-Plans*/
@@ -1979,7 +1979,6 @@ header .TitlesOfWebSite a:hover::before {
     margin: var(--marginOfBigScreen);
     background-color: var(--section-background);
     border: 5px solid #f4f4f4;
-    font-size: var(--fontOfMiddleScreen);
 
 }
 
@@ -1987,7 +1986,7 @@ header .TitlesOfWebSite a:hover::before {
 .Top-Videos .container{
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: var(--marginOfMiddleScreen);
 
 }
@@ -2000,12 +1999,6 @@ header .TitlesOfWebSite a:hover::before {
     font-size: var(--fontOfSmallScreen);
 
 }
-}
-
-.Top-Videos .container .list{
-
-    display: grid;
-
 }
 
 .Top-Videos .container .list .title{
@@ -2046,7 +2039,6 @@ header .TitlesOfWebSite a:hover::before {
 
 }
 
-
 .Top-Videos .container .description{
 
     display:flex;
@@ -2066,7 +2058,7 @@ header .TitlesOfWebSite a:hover::before {
 
     background-color: white;
     color: var(--paragraphColor);
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
 
 }
